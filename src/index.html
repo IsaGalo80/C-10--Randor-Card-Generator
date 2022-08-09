@@ -1,3 +1,8 @@
+<!-- Daniel: quería hacer el diseño, la parte estética por así decirlo, con bootstrap pero
+hubo cosas que no encontré y por eso hice una parte en CSS , sé que es desprolijo, porque
+se debería de hacer o todo con CSS o con bootstrap o por lo menos es lo que creo 
+pero no pude. Otra cosa qu eme sucedió, es que al hacer click nunca llego al palo de rojo 
+y no sé por qué. Voy a a gradecer tu coentario y ayuda. -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,37 +19,44 @@
   </head>
   <body>
     <div id="container-fluid">
-      <div class="card mx-auto my-5" style="width: 20rem; height: 35rem;">
+      <div
+        id="carta"
+        class="card position-absolute top-50 start-50 translate-middle border border-dark border border-4"
+        style="width: 20rem; height: 28rem;"
+      >
         <div class="card-body">
           <div
-          class=" position-relative card  position-absolute top-0 start-0"
-          id="uno"
-        >
-          uno
-        </div>
-        <div
-          class=" position-relative position-absolute bottom-50 end-50"
-          id="dos"
-        >
-          dos
-        </div>
-        <div
-          class="position-relative position-absolute bottom-0 end-0"
-          id="tres"
-        >
-          tres
-        </div>
-          
+            class=" position-relative card  position-absolute top-0 start-0"
+            id="uno"
+          >
+            uno
+          </div>
+          <div
+            class=" position-relative  position-absolute top-50 start-50 translate-middle"
+            id="dos"
+          >
+            dos
+          </div>
+          <div
+            class="position-relative position-absolute bottom-0 end-0"
+            id="tres"
+          >
+            tres
+          </div>
         </div>
       </div>
+      <div class=" p-4 col-2 mx-auto   " style="width: 5rem; height: 5rem;">
+        <button
+          id="btn"
+          onclick="Mezclar()"
+          type="button"
+          class="btn btn-danger"
+        >
+          BARAJAR!!
+        </button>
       </div>
     </div>
-    <div class=" p-4 col-2 mx-auto">
-      <button onclick="Mezclar()" type="button" class="btn btn-outline-light">
-        Mezclar
-      </button>
-    </div>
-    <div class="fixed-bottom p-4">
+    <div id="4geeks" class="fixed-bottom p-4">
       Made with ❤️ by
       <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
     </div>

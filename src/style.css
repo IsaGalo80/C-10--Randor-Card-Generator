@@ -1,9 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
-  background: green;
+  background-color: black;
+  background-image: url(https://i.pinimg.com/originals/cc/99/1d/cc991d74d6b93bcfd2e78512fd36f454.jpg);
+  background-repeat: repeat-x;
 }
 
-.card {
-  width: 200px;
-  height: 550;
+#uno {
+  font-size: 60px;
+}
+
+#dos {
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tres {
+  font-size: 60px;
 }
